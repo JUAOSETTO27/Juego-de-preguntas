@@ -99,7 +99,7 @@ if st.session_state.etapa == "registro":
         st.session_state.temp_jugadores = []
 
     nuevo_jugador = st.text_input("Nombre del jugador:")
-    if st.button("➕ Añadir Jugador"):
+    if st.button("➕ Añadir Jugador", use_container_width=True):
         if nuevo_jugador.strip():
             if nuevo_jugador.strip() not in st.session_state.temp_jugadores:
                 st.session_state.temp_jugadores.append(nuevo_jugador.strip())
